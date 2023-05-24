@@ -19,52 +19,21 @@ The dataset was download from Driven Data as part of a project that aims at pred
 
 - **For this project, the seasonal_vaccine column was used as the target variable because it did not have a lot of imbalance between its binary variables**
 
-- **Target Variables**
-1. `h1n1_vaccine` - Whether respondent received H1N1 flu vaccine.
-2. `seasonal_vaccine` - Whether respondent received seasonal flu vaccine.
-Both are binary variables: 0 = No; 1 = Yes.
+### Modeling
+From the problem statement, it is clear that the project dealt with a classification problem, and therefore, the models chosen had to be classifiers. The goal of classification problems is usually to estimate the probability of an event occuring based on a set of independent features. 
+In this project, the base model was chosen to be `Logistic Regression` because of its capability to handle classification problems with ease, and also the fact that its results are highly interpretable. 
+However, the results of this base model were deemed to be less apt because there was a problem of underfitting. So, other models were employed, including the `Random Forest Classifier`, `Gradient Boosting Classifier`, and the `XGBoost Classifier`. These were employed so that the best model that yields the best scores could be found. 
 
-- **Independent Features**
-1. `h1n1_concern` - Level of concern about the H1N1 flu.
-0 = Not at all concerned; 1 = Not very concerned; 2 = Somewhat concerned; 3 = Very concerned.
-2. `h1n1_knowledge` - Level of knowledge about H1N1 flu.
-0 = No knowledge; 1 = A little knowledge; 2 = A lot of knowledge.
-3. `behavioral_antiviral_meds` - Has taken antiviral medications. (binary)
-4. `behavioral_avoidance` - Has avoided close contact with others with flu-like symptoms. (binary)
-5. `behavioral_face_mask` - Has bought a face mask. (binary)
-6. `behavioral_wash_hands` - Has frequently washed hands or used hand sanitizer. (binary)
-7. `behavioral_large_gatherings` - Has reduced time at large gatherings. (binary)
-8. `behavioral_outside_home` - Has reduced contact with people outside of own household. (binary)
-9. `behavioral_touch_face` - Has avoided touching eyes, nose, or mouth. (binary)
-10. `doctor_recc_h1n1` - H1N1 flu vaccine was recommended by doctor. (binary)
-11. `doctor_recc_seasonal` - Seasonal flu vaccine was recommended by doctor. (binary)
-12. `chronic_med_condition` - Has any of the following chronic medical conditions: asthma or an other lung condition, diabetes, a heart condition, a kidney condition, sickle cell anemia or other anemia, a neurological or neuromuscular condition, a liver condition, or a weakened immune system caused by a chronic illness or by medicines taken for a chronic illness. (binary)
-13. `child_under_6_months` - Has regular close contact with a child under the age of six months. (binary)
-14. `health_worker` - Is a healthcare worker. (binary)
-15. `health_insurance` - Has health insurance. (binary)
-16. `opinion_h1n1_vacc_effective` - Respondent's opinion about H1N1 vaccine effectiveness.
-1 = Not at all effective; 2 = Not very effective; 3 = Don't know; 4 = Somewhat effective; 5 = Very effective.
-17. `opinion_h1n1_risk` - Respondent's opinion about risk of getting sick with H1N1 flu without vaccine.
-1 = Very Low; 2 = Somewhat low; 3 = Don't know; 4 = Somewhat high; 5 = Very high.
-18. `opinion_h1n1_sick_from_vacc` - Respondent's worry of getting sick from taking H1N1 vaccine.
-1 = Not at all worried; 2 = Not very worried; 3 = Don't know; 4 = Somewhat worried; 5 = Very worried.
-19. `opinion_seas_vacc_effective` - Respondent's opinion about seasonal flu vaccine effectiveness.
-1 = Not at all effective; 2 = Not very effective; 3 = Don't know; 4 = Somewhat effective; 5 = Very effective.
-20. `opinion_seas_risk` - Respondent's opinion about risk of getting sick with seasonal flu without vaccine.
-1 = Very Low; 2 = Somewhat low; 3 = Don't know; 4 = Somewhat high; 5 = Very high.
-21. `opinion_seas_sick_from_vacc` - Respondent's worry of getting sick from taking seasonal flu vaccine.
-1 = Not at all worried; 2 = Not very worried; 3 = Don't know; 4 = Somewhat worried; 5 = Very worried.
-22. `age_group` - Age group of respondent.
-23. `education` - Self-reported education level.
-24. `race` - Race of respondent.
-25. `sex` - Sex of respondent.
-26. `income_poverty` - Household annual income of respondent with respect to 2008 Census poverty thresholds.
-27. `marital_status` - Marital status of respondent.
-28. `rent_or_own` - Housing situation of respondent.
-29. `employment_status` - Employment status of respondent.
-30. `hhs_geo_region` - Respondent's residence using a 10-region geographic classification defined by the U.S. Dept. of Health and Human Services. Values are represented as short random character strings.
-31. `census_msa` - Respondent's residence within metropolitan statistical areas (MSA) as defined by the U.S. Census.
-32. `household_adults` - Number of other adults in household, top-coded to 3.
-33. `household_children` - Number of children in household, top-coded to 3.
-34. `employment_industry` - Type of industry respondent is employed in. Values are represented as short random character strings.
-35. `employment_occupation` - Type of occupation of respondent. Values are represented as short random character strings.
+### Evaluation
+![image](https://github.com/MandelaGit/Seasonal_Vaccine_Prediction/assets/113025548/129371a2-85be-4b4e-acea-a49cc032199c)
+- From the dataframe above, it is clear that Gradient Boosting and XGBoost happen to post the highest scores. Therefore, these two models are chosen as the best for the classification problem that was being handled. 
+- However, it is crucial to note that the models' accuracy scores were just shy of the 80% accuracy score that was declared as the metric of success for this project.
+
+### Conclusion and Recommendations
+- The models developed from the dataset happen to have relatively high accuracy scores, and while this is a good thing for the dataset at hand, it can also present some questions. For example, would the models above offer the same predictions if the data were to be skewed a little? If, for example, the race statistics were to be tweaked a little, would the models offer the same predictions? Also, considering that the dataset was not a universal representation of a population, can the conclusions drawn be generalized? 
+- So, while the models performed well with the data provided, the results might be different if the dataset is tweaked. However, from the dataset, the models happened to provide their best predictions. 
+
+#### Recommendations
+The models have painted a clearer picture of how people normally respond to vaccines and vaccine campaigns. From the four models reviewed, it has been established that the opinions regarding vaccines, people's concerns over certain conditions, the age one belongs to, and even the knowledge one has regarding a condition greatly influences one's decision to be vaccinated. Therefore, from the above, public health efforts should consider the following:
+1. Sensitize the young people more regarding seasonal vaccines. 
+2. Shape the public narrative regarding seasonal vaccines through campaigns on the importance of flu vaccine. 
