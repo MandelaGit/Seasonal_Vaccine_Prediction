@@ -24,6 +24,20 @@ From the problem statement, it is clear that the project dealt with a classifica
 In this project, the base model was chosen to be `Logistic Regression` because of its capability to handle classification problems with ease, and also the fact that its results are highly interpretable. 
 However, the results of this base model were deemed to be less apt because there was a problem of underfitting. So, other models were employed, including the `Random Forest Classifier`, `Gradient Boosting Classifier`, and the `XGBoost Classifier`. These were employed so that the best model that yields the best scores could be found. 
 
+- Below are confusion matrices of all the models showcasing how they performed:
+1. Confusion Matrix from the Logistic Regression Model
+![image](https://github.com/MandelaGit/Seasonal_Vaccine_Prediction/assets/113025548/a672f657-fffa-475a-80ea-0a6705ab1397)
+
+2. Confusion Matrix from the Random Forest Model
+![image](https://github.com/MandelaGit/Seasonal_Vaccine_Prediction/assets/113025548/82408e11-6bf9-48f4-8ce7-27e43453e80c)
+
+3. Confusion Matrix from the Gradient Boost Model
+![image](https://github.com/MandelaGit/Seasonal_Vaccine_Prediction/assets/113025548/b1585ad2-0414-4522-8cee-07f9211da133)
+
+4. Confusion Matrix from the XGBoost Model
+![image](https://github.com/MandelaGit/Seasonal_Vaccine_Prediction/assets/113025548/51fcc0d0-abd2-4fa9-9875-2d1fd401fb43)
+
+
 ### Evaluation
 ![image](https://github.com/MandelaGit/Seasonal_Vaccine_Prediction/assets/113025548/129371a2-85be-4b4e-acea-a49cc032199c)
 - From the dataframe above, it is clear that Gradient Boosting and XGBoost happen to post the highest scores. Therefore, these two models are chosen as the best for the classification problem that was being handled. 
@@ -34,6 +48,9 @@ However, the results of this base model were deemed to be less apt because there
 - So, while the models performed well with the data provided, the results might be different if the dataset is tweaked. However, from the dataset, the models happened to provide their best predictions. 
 
 #### Recommendations
-The models have painted a clearer picture of how people normally respond to vaccines and vaccine campaigns. From the four models reviewed, it has been established that the opinions regarding vaccines, people's concerns over certain conditions, the age one belongs to, and even the knowledge one has regarding a condition greatly influences one's decision to be vaccinated. Therefore, from the above, public health efforts should consider the following:
+The models have painted a clearer picture of how people normally respond to vaccines and vaccine campaigns. From the four models reviewed, it has been established that the opinions regarding vaccines, people's concerns over certain conditions, the age one belongs to, and even the knowledge one has regarding a condition greatly influences one's decision to be vaccinated. The chart shown below helps to paint a clearer picture of which features happen to have a greater influence on people's decision to take seasonal vaccines. 
+![image](https://github.com/MandelaGit/Seasonal_Vaccine_Prediction/assets/113025548/0344d663-9ced-4164-8e46-6209f41531ad)
+
+Therefore, from the above, public health efforts should consider the following:
 1. Sensitize the young people more regarding seasonal vaccines. 
 2. Shape the public narrative regarding seasonal vaccines through campaigns on the importance of flu vaccine. 
