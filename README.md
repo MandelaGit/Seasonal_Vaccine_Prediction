@@ -26,15 +26,19 @@ However, the results of this base model were deemed to be less apt because there
 
 - Below are confusion matrices of all the models showcasing how they performed:
 1. Confusion Matrix from the Logistic Regression Model
+
 ![image](https://github.com/MandelaGit/Seasonal_Vaccine_Prediction/assets/113025548/a672f657-fffa-475a-80ea-0a6705ab1397)
 
 2. Confusion Matrix from the Random Forest Model
+
 ![image](https://github.com/MandelaGit/Seasonal_Vaccine_Prediction/assets/113025548/82408e11-6bf9-48f4-8ce7-27e43453e80c)
 
 3. Confusion Matrix from the Gradient Boost Model
+
 ![image](https://github.com/MandelaGit/Seasonal_Vaccine_Prediction/assets/113025548/b1585ad2-0414-4522-8cee-07f9211da133)
 
 4. Confusion Matrix from the XGBoost Model
+
 ![image](https://github.com/MandelaGit/Seasonal_Vaccine_Prediction/assets/113025548/51fcc0d0-abd2-4fa9-9875-2d1fd401fb43)
 
 
