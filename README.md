@@ -1,4 +1,5 @@
 # Seasonal_Vaccine_Prediction
+![image](https://github.com/MandelaGit/Seasonal_Vaccine_Prediction/assets/113025548/df4f07e3-f8d2-4a54-94bd-e72e5c57c228)
 ### Overview
 Seasonal vaccinations are crucial for safeguarding the public's health and halting the spread of dangerous diseases. Data science techniques have become effective resources in recent years for comprehending and forecasting vaccine uptake, which is essential for determining vaccination campaigns. The goal of this data science modeling research is to apply predictive analytics to estimate people's willingness to receive seasonal vaccinations.
 
